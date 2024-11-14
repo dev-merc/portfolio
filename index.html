@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <header>
+            <nav>
+                <button><a href="#home">Home</a></button>
+                <button><a href="#about">About</a></button>
+                <button><a href="#services">Services</a></button>
+                <button><a href="#contact">Contact</a></button>
+            </nav>
+        </header>
+        
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to My Modern Portfolio</h1>
+        <p>Your one-stop solution for web design and development</p>
+        <button>Learn More</button>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I’m a web developer passionate about creating modern websites. I specialize in HTML, CSS, JavaScript, and Python.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Web Development</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project 1: Personal Website</h3>
+                <p>Built a responsive personal website to showcase my skills and projects.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Portfolio Website</h3>
+                <p>Created a dynamic portfolio website for a client using HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xrbgkrdk" method="POST" redirect="thank-you.html">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name" required />
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required />
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+            
+                <button type="submit">Send Message</button>
+            </form>
+            
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const form = document.querySelector("form");
+    
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            // Show a confirmation message
+            form.innerHTML = "<p>Thank you! Your message has been sent.</p>";
+            
+            // You can also reset the form if needed
+            form.reset();
+        });
+    </script>
+    
+</body>
+</html>

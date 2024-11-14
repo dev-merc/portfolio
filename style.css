@@ -1,0 +1,416 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #836363;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content */
+    background-color: #d8d0d0; /* White background for main content */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for a modern feel */
+    box-shadow: 0 4px 8px rgba(158, 152, 152, 0.1); /* Subtle shadow */
+}
+
+/* Header */
+header {
+    background-color: #978888;
+    color: #5b9dad;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 16px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+button {
+    background-color: #6e90b4; /* Modern blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded edges */
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a3b3c5; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/*hero section*/
+.hero {
+    background-image: url('images/hero-image.jpg'); /* Replace with your own image */
+    background-size: cover;
+    background-position: center;
+    color: #706868;
+    padding: 80px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #0056b3;
+}
+
+
+/* About Section */
+#about {
+    background: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+}
+
+/* Skills Section */
+#skills {
+    background: #e2e2e2;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#skills h2 {
+    margin-bottom: 30px;
+}
+
+#skills ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#skills li {
+    font-size: 1.5rem;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#skills li:hover {
+    background: #4c8baf;
+    color: white;
+}
+
+/* Projects Section */
+#projects {
+    background: #fff;
+    padding: 80px 0;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project {
+    background: #f9f9f9;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.1rem;
+}
+
+.project a {
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    background: #333;
+    color: white;
+    padding: 80px 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #5170a0;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+form button:hover {
+    background: #585699;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4c6faf;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.scroll-to-top:hover {
+    background-color: #457ba0;
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+
+    .project {
+        padding: 20px;
+    }
+
+    form input, form textarea, form button {
+        padding: 12px;
+    }
+}
+/* Animate the header */
+header {
+    background: #5a7a80;
+    color: rgb(39, 37, 37);
+    padding: 20px 0;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Navigation link hover animation */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4c90af;
+    transform: scale(1.1);
+}
+/* Add fade-in animation to sections */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Button hover animation */
+form button {
+    background: #4c8baf;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: #458ba0;
+    transform: scale(1.1);
+}
+/* Link hover animation in projects */
+.project a {
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.project a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #4CAF50;
+    transition: width 0.3s ease;
+}
+
+.project a:hover::after {
+    width: 100%;
+}
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
